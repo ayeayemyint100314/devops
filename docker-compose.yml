@@ -7,5 +7,5 @@ services:
   # db is is db folder
   db:
     build: db/.
-    command: --mysql-native-password=ON
+    command: --mysql-native-password=ON --sql_mode=
     restart: always
