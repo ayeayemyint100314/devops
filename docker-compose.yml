@@ -14,5 +14,5 @@ services:
       MYSQL_RANDOM_ROOT_PASSWORD: 'true'
 
     build: db/.
-    command: --default-authentication-plugin=mysql_native_password
+    command: --mysql_native_password=ON
     restart: always
