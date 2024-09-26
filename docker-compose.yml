@@ -7,6 +7,11 @@ services:
   # db is is db folder
   db:
     image: mysql:8
+    environment:
+      MYSQL_DATABASE: world
+      MYSQL_USER: root
+      MYSQL_PASSWORD:
+      MYSQL_RANDOM_ROOT_PASSWORD: 'true'
     build: db/.
     command: --default-authentication-plugin=mysql_native_password
     restart: always
